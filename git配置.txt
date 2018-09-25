@@ -63,9 +63,20 @@ $ git remote rm origin
   
   问题4：IP问题：Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of know in hosts.
   解决4：$ vi /etc/hosts 》192.30.253.113  github.com
-   
   
-
+  
+  
+  
+   
+ ------------------------------本机新建文件路径上传-----------------------------------
+$ cd gitfile/
+$ git init
+$ git add .
+$ git commit -m "代码提交"
+$ git remote rm origin
+$ git remote add origin git@github.com:tamily-duoy/little-project-from-others.git
+$ git pull --rebase origin master
+$ git push -u origin master
 
 
 
